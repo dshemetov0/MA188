@@ -33,11 +33,6 @@ if __name__ == '__main__':
     d = int(input('Please enter a value for d: '))
     findfp(d**2)
     checkmodc(c, d)
-    #print(fp)                                       # prints the possible factor pairs
     solvefp(c, d)
     for key in sol.keys():                            # prints the solution set
       print(str(key) + ", " + str(sol[key]))
-    
-    #print(sol)                                      # prints the solution set
-    # for key in sol:                               # preliminary checker of solution set, will not always work due to rounding issues but serves as a general analysis
-    #     print(1/key + 1/sol[key] == c/d)
